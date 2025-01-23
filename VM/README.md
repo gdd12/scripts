@@ -35,7 +35,7 @@ git clone https://github.com/gdd12/scripts.git
 ```
 #### 2. Change to the scripts directory
 ```bash
-cd /scripts
+cd /scripts/VM
 ```
 #### 3. Configure the vm_manager.sh file
 ```bash
@@ -52,7 +52,7 @@ chmod +x vm_manager.sh
 #### 5. (Optional) Set up an alias
 To run the script from anywhere, you can set up an alias. Open your shell configuration file (e.g., .bashrc, .zshrc, .zprofile) and add the following line:
 ```bash
-alias vmmanager='/path/to/scripts/vm_manager.sh'
+alias vmmanager='/path/to/scripts/VM/vm_manager.sh'
 ```
 After saving the changes, reload the shell configuration:
 ```bash
