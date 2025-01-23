@@ -4,7 +4,7 @@
 VM_FILE="/path/to/vm_file.txt"
 
 # Input the path to where you have the private key file for the Virtual Machines (password-less authentication)
-KEY_FILE="/path/to/key"
+KEY_FILE="/path/to/private_key"
 
 ############## Do NOT change anything below this line ##############
 
@@ -88,7 +88,7 @@ delete_vm() {
 
 while true; do
     display_vms
-    echo "Would you like to (1) Connect, (2) Add, (3) Edit, or (4) Delete"
+    echo "Would you like to (1) Connect, (2) Add, (3) Edit, (4) Delete, (Q) Quit"
     read -p " > " choice
     
     case $choice in
@@ -121,9 +121,6 @@ while true; do
         *)
             echo "Exiting."
             exit 0
-            ;;
-        *)
-            echo "Invalid choice. Please try again."
             ;;
     esac
 done
